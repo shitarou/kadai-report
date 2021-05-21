@@ -24,10 +24,18 @@
                             </td>
                         </tr>
                         <tr>
+                            <th>出勤時間</th>
+                            <td><c:out value="${report.time_in}" /></td>
+                        </tr>
+                        <tr>
+                            <th>退勤時間</th>
+                            <td><c:out value="${report.time_out}" /></td>
+                        </tr>
+
+                        <tr>
                             <th>登録日時</th>
-                            <td>
-                                <fmt:formatDate value="${report.created_at}" pattern="yyyy-MM-dd HH:mm:ss" />
-                            </td>
+                            <td><fmt:formatDate value="${report.created_at}"
+                                    pattern="yyyy-MM-dd HH:mm:ss" /></td>
                         </tr>
                         <tr>
                             <th>更新日時</th>
